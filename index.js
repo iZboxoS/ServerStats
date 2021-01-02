@@ -49,19 +49,8 @@ app.get('/', async function (req, res) {
     var z = systemMonitor.get(['ram']);
     var l = systemMonitor.get(['cpu'])
 
-
-    var g = "XD";
-    var y = "Upeč si palačinky"
-    var n = "Palačinky nebudou"
-    if(x > 65) {
-      g = y
-    } else {
-      g = n
-    };
-
 res.render("index",{
     a: x,
-    cock: g,
     tmp: dhm(Date.now() - start),
     up: p,
     mnt: z.RAM_Usage,
