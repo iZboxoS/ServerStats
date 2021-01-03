@@ -1,0 +1,1 @@
+npm i nodejs-system-info systeminformation express ejs
